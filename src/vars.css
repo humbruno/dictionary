@@ -4,4 +4,6 @@
   --light-gray: #f4f4f4;
   --text-primary: #2b2b2b;
   --text-secondary: #aaaaaa;
+
+  --breakpoint-laptop: '1024px';
 }

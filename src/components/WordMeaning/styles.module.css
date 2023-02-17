@@ -63,9 +63,16 @@
   display: inline-flex;
   list-style: none;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .synonymList li {
   font-weight: 700;
   color: var(--accent-dark);
+}
+
+@media only screen and (max-width: 1024px) {
+  .divider::after {
+    width: 60px;
+  }
 }
