@@ -1,0 +1,37 @@
+@import '../../vars.css';
+
+.input {
+  width: 1000px;
+  max-width: 100%;
+  padding: 16px 38px 16px 16px;
+  border-radius: 10px;
+  border: 2px solid var(--light-gray);
+  background-color: var(--light-gray);
+  color: var(--text-primary);
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition: all 150ms ease-in-out;
+
+  background-image: url('../../assets/SVG/search.svg');
+  background-position: center right 16px;
+  background-repeat: no-repeat;
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid var(--accent);
+}
+
+.error {
+  color: var(--accent-dark);
+  font-weight: 500;
+  margin-top: 16px;
+  padding-left: 16px;
+  font-size: 0.85rem;
+}

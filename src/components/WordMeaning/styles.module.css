@@ -1,0 +1,71 @@
+@import '../../vars.css';
+
+.container {
+  margin-top: 40px;
+}
+
+.divider {
+  color: var(--text-primary);
+  position: relative;
+}
+
+.divider::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 20px);
+  height: 1px;
+  width: 600px;
+  background-color: var(--text-secondary);
+}
+
+.meaning {
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.list {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding-left: 40px;
+}
+
+.list li::before {
+  content: '\2022';
+  color: var(--accent-dark);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.example {
+  color: var(--text-secondary);
+  margin-top: 10px;
+}
+
+.synonymsContainer {
+  margin-top: 60px;
+}
+.synonyms {
+  display: inline;
+}
+
+.synonymList {
+  margin-left: 20px;
+  display: inline-flex;
+  list-style: none;
+  gap: 12px;
+}
+
+.synonymList li {
+  font-weight: 700;
+  color: var(--accent-dark);
+}
