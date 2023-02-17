@@ -1,0 +1,62 @@
+@import '../../vars.css';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 40px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--accent);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 150ms ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.word h1 {
+  font-size: 3rem;
+  color: var(--text-primary);
+}
+
+.word h2 {
+  font-size: 1rem;
+  color: var(--accent-dark);
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.source {
+  margin-top: 20px;
+}
+
+.source hr {
+  height: 1px;
+  border: none;
+  background-color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.source small {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.source a {
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}

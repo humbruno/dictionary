@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   root: true,
@@ -10,7 +10,7 @@ module.exports = {
     'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
     'prettier/@typescript-eslint', // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
-    'plugin:prettier/recommended' // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   plugins: ['prettier', 'react-hooks'],
   rules: {
@@ -22,8 +22,8 @@ module.exports = {
         trailingComma: 'all',
         singleQuote: true,
         printWidth: 80,
-        tabWidth: 2
-      }
+        tabWidth: 2,
+      },
     ],
     curly: ['error', 'multi-line', 'consistent'],
     'jsx-a11y/anchor-is-valid': 0,
@@ -31,13 +31,13 @@ module.exports = {
     'react/display-name': 'off',
     'react/jsx-curly-brace-presence': [
       2,
-      { props: 'ignore', children: 'never' }
+      { props: 'ignore', children: 'never' },
     ],
     'react/jsx-filename-extension': [
       'warn',
       {
-        extensions: ['.js', '.jsx', '.tsx']
-      }
+        extensions: ['.js', '.jsx', '.tsx'],
+      },
     ],
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-one-expression-per-line': 'off',
@@ -56,12 +56,12 @@ module.exports = {
           'instance-variables',
           'lifecycle',
           'everything-else',
-          'rendering'
+          'rendering',
         ],
         groups: {
-          rendering: ['/^render.+$/', 'render']
-        }
-      }
+          rendering: ['/^render.+$/', 'render'],
+        },
+      },
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
@@ -75,14 +75,14 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never'
-      }
+        tsx: 'never',
+      },
     ],
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['**/*.stories.js']
-      }
+        devDependencies: ['**/*.stories.js'],
+      },
     ],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': [
@@ -101,58 +101,58 @@ module.exports = {
          * (such as the 'path' prop for Reach Router), just put an underscore at the start
          * For example: const Dashboard = (_: RouteComponentProps) => {
          */
-        argsIgnorePattern: '^_'
-      }
+        argsIgnorePattern: '^_',
+      },
     ],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-member-accessibility': [
       0,
-      { accessibility: 'no-public' }
+      { accessibility: 'no-public' },
     ],
-    '@typescript-eslint/no-var-requires': 'off'
+    '@typescript-eslint/no-var-requires': 'off',
   },
   overrides: [
     {
       files: ['**/*.tsx'],
       rules: {
-        'react/prop-types': 'off'
-      }
-    }
+        'react/prop-types': 'off',
+      },
+    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   env: {
     es6: true,
     node: true,
-    browser: true
+    browser: true,
   },
   settings: {
     'import/resolver': {
       node: {
         paths: ['./src'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
       typescript: {},
       webpack: {
         config: {
           resolve: {
             alias: {
-              '*': path.resolve(__dirname, './src')
+              '*': path.resolve(__dirname, './src'),
             },
-            extensions: ['.js', '.jsx', '.ts', '.tsx']
-          }
-        }
-      }
+            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+          },
+        },
+      },
     },
     react: {
-      version: 'detect' // Tells eslint-plugin-react to automatically detect the version of React to use
-    }
-  }
-}
+      version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
+    },
+  },
+};

@@ -4,9 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  font-family: 'Fira Mono', monospace;
 }
 
 body {
-  font-family: 'Fira Mono', monospace;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 80px 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  max-width: 1000px;
 }
